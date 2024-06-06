@@ -34,7 +34,7 @@ use Phan\Issue;
  * '-d' flag.
  */
 return [
-    'phan_disable_xdebug_warn' = 1,
+    'phan_disable_xdebug_warn' => true,
     
     // Supported values: `'5.6'`, `'7.0'`, `'7.1'`, `'7.2'`, `'7.3'`, `'7.4'`, `null`.
     // If this is set to `null`,
