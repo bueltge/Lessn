@@ -5,6 +5,7 @@ use Lessn\Helper\Helper;
 require_once(__DIR__.'/config.php');
 require_once(__DIR__.'/SIDB423.php');
 require_once(__DIR__.'/db.php');
+require_once(__DIR__.'/config.php');
 require_once(__DIR__.'/const.php');
 require_once(LESSN_ROOT.'/Helper.php');
 
