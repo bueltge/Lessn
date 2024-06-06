@@ -57,10 +57,6 @@ if (isset($_GET['url']) && !empty($_GET['url'])) {
     }
     $new_url = LESSN_URL.base_convert($id, 10, 36);
 
-    if (isset($_GET['tweet'])) {
-        $_GET['redirect'] = 'https://twitter.com/?status=%l';
-    }
-
     if (isset($_GET['redirect'])) {
         header('Location:'.str_replace('%l', urlencode($new_url), $_GET['redirect']));
         exit();
