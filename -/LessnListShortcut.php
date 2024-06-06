@@ -8,8 +8,6 @@
 
 namespace Lessn\LessnListShortcut;
 
-require_once(LESSN_ROOT.'/config.php');
-
 /**
  * Class LessnListShortcut
  */
