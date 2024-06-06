@@ -18,8 +18,12 @@
         <exclude-pattern>./Medoo.php</exclude-pattern>
         <exclude-pattern>./SIDB5.php</exclude-pattern>
         <exclude-pattern>./SIDB423.php</exclude-pattern>
-        <exclude name="Generic.Files.LineLength.TooLong" />
-        <exclude name="Internal.NoCodeFound" />
+    </rule>
+    <rule ref="Squiz">
+        <exclude name="Generic.Files.LineLength.TooLong"/>
+    </rule>
+    <rule ref="Internal.NoCodeFound">
+        <severity>0</severity>
     </rule>
 </ruleset>
 
