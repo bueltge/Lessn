@@ -37,7 +37,7 @@
 		}
 	},
     "scripts": {
-        "cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "cs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs -vvv",
         "csfix": "@php ./vendor/bin/phpcbf",
         "pu": "@php ./vendor/bin/phpunit",
         "qa": [
