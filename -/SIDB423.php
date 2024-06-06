@@ -105,6 +105,11 @@ class SIDB {
 		return $sql;
 	}
 	function strip_slashes($str) { // :string
+        // Because get_magic_quotes_gpc() is not necassary for PHP7*
+		if (version_compare(phpversion(), '7.0.0') >= 0) {
+			return $str;
+		}
+                                  
 		if (get_magic_quotes_gpc())
 		{
 			$str = stripslashes($str);
