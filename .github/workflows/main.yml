@@ -17,9 +17,10 @@ jobs:
           - '8.0'
           - '8.1'
           - '8.2'
+          - '8.3'
         
         include:
-          - php-version: '8.3'
+          - php-version: '8.4'
             experimental: true
             
     # Steps represent a sequence of tasks that will be executed as part of the job
