@@ -18,6 +18,8 @@
         <exclude-pattern>./Medoo.php</exclude-pattern>
         <exclude-pattern>./SIDB5.php</exclude-pattern>
         <exclude-pattern>./SIDB423.php</exclude-pattern>
+        <exclude name="Generic.Files.LineLength.TooLong" />
+        <exclude name="Internal.NoCodeFound" />
     </rule>
 </ruleset>
 
