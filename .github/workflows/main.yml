@@ -48,12 +48,9 @@ jobs:
     - name: Analyze with Phan
       run: ./vendor/bin/phan
 
-    #- name: Check code styles
-    #  continue-on-error: true
-    #  run: ./vendor/bin/phpcs
+    - name: Check code styles
+      continue-on-error: true
+      run: ./vendor/squizlabs/php_codesniffer/bin/phpcs
 
     #- name: Run QA Scripts from composer.json
     #  run: composer qa
-
-    - name: Check PHP Code Style (phpcs)
-      uses: chindit/actions-phpcs@master
