@@ -15,8 +15,7 @@ require_once(LESSN_ROOT.'/stubs/header.php'); ?>
     <strong><?php echo htmlspecialchars($url); ?></strong>
 </p>
 <p>
-    <a href="https://twitter.com/?status=<?php echo urlencode($new_url); ?>">Tweet</a>
-    <a href="<?php echo LESSN_URL; ?>">... or back to the list of shortcuts</a>
+    <a href="<?php echo LESSN_URL; ?>">... go back to the list of shortcuts</a>
 </p>
 <script>
     var input = document.getElementById('url');
