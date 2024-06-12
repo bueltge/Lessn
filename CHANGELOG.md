@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.2.2
+- Remove Twitter links, options
+- Ready for PHP 8.2
+- Remove dependency topic
+- Update code style rules
+
 ## 1.2.1
 - Add https support (include helper class)
 - Code maintenance
@@ -21,8 +27,8 @@ All notable changes to this project will be documented in this file. This projec
 
 ## 1.0.7
 - added "Updating to 1.0.7 from 1.0.6" to README.txt
-- disable readonly attribute on lessn'd url input on iOS
-- updated sql string escaping to mysql_real_escape_string() if available
+- disable read only attribute on lessn'd url input on iOS
+- updated SQL string escaping to mysql_real_escape_string() if available
 - added stripslashes() to redirect url (to properly handle urls with single quotes)
 
 ## 1.0.6
@@ -32,7 +38,7 @@ All notable changes to this project will be documented in this file. This projec
 ## 1.0.5
 - added "Updating to 1.0.5" to README.txt
 - &api= requests now require your API key (now available on the same screen as the bookmarklets) if not already logged in
-- fixed bug where &api request returned the original url not the Lessn'd url
+- fixed bug where &api request returned the original URL, not the Lessn'd url
 
 ## 1.0.4
 - changed redirect replacement token to %l to work better with Fever's sharing feature
