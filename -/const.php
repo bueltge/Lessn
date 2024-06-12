@@ -3,11 +3,11 @@
  * Define all constants.
  *
  * @since   2015-12-01
- * @version 2019-09-25
+ * @version 2024-06-12
  * @package Lessn
  */
 
-define('LESSN_VERSION', '1.2.1');
+define('LESSN_VERSION', '1.2.2');
 
 define('LESSN_ROOT', __DIR__);
 define('LESSN_DOMAIN', preg_replace('#^www\.#', '', $_SERVER['SERVER_NAME']));
