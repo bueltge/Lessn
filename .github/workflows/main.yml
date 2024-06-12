@@ -46,11 +46,16 @@ jobs:
       run: composer install -q -n -a --no-progress --prefer-dist
 
     - name: Analyze with Phan
-      run: ./vendor/bin/phan
+      run: ./vendor/bin/phan --coverage-clover coverage.xml .
 
     - name: Check code styles
       continue-on-error: true
       run: ./vendor/squizlabs/php_codesniffer/bin/phpcs
-
+      
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v4.0.1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+    
     #- name: Run QA Scripts from composer.json
     #  run: composer qa
